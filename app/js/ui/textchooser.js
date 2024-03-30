@@ -109,8 +109,7 @@ var TextChooser = function() {
 
 		var text = filter.val().toLowerCase();
 
-		if (false) {
-			debugger;
+		if (text == '') {
 			renderTexts(list_data);
 			//updateRecentlyUsed();
 		} else {
