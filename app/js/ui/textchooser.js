@@ -109,8 +109,6 @@ var TextChooser = function() {
 
 		var text = filter.val().toLowerCase();
 
-
-
 		if (text == '') {
 			renderTexts(list_data);
 			//updateRecentlyUsed();
@@ -407,7 +405,6 @@ var TextChooser = function() {
 					var text = textsInLang[textIndex],
 						isDefaultText = checkIsDefaultText(text.id);
 
-					if (text_type == 'bible' ) {
 						if (mode == 'none' || mode == 'languages' || (isDefaultText && mode == 'default')) {
 							langHtml.push(
 								createTextRow(
@@ -421,7 +418,7 @@ var TextChooser = function() {
 						if (!hasDefaultText && isDefaultText) {
 							hasDefaultText = true;
 						}
-					} else if (text_type == 'deafbible' ) {
+					 else if (text_type == 'deafbible' ) {
 						langHtml.push(
 							createImageRow(
 									text,
@@ -431,8 +428,7 @@ var TextChooser = function() {
 
 					}
 				}
-
-				if (text_type == 'bible' && (mode == 'none' || mode == 'languages' || (hasDefaultText && mode == 'default')) ) {
+				if (mode == 'none' || mode == 'languages' || (hasDefaultText && mode == 'default')) {
 
 					var languageDisplayTitle = '';
 
@@ -739,7 +735,7 @@ var TextChooser = function() {
 		if (needsToRerender) {
 			renderTexts(list_data);
 
-			if (text_type == 'bible' && sofia.config.enableBibleSelectorTabs && sofia.config.bibleSelectorDefaultList && sofia.config.bibleSelectorDefaultList.length > 0) {
+			if (sofia.config.enableBibleSelectorTabs && sofia.config.bibleSelectorDefaultList && sofia.config.bibleSelectorDefaultList.length > 0) {
 				listselector
 					.find('.text-chooser-default')
 					.addClass('selected')

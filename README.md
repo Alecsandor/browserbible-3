@@ -1,3 +1,12 @@
+## Scriptura si Parintii
+
+# Cum sa adaugi comentarii in teofilact?
+Vom lua ca exemplu adaugarea Genezei (Gen) care are 50 de capitole
+- In teofilact.js modifica valoarea `totalNumberOfChapters`(linia 127) cu nr de capitole aferent cartii, in cazul nostru 50, astfel modificarea aferenta linii va fi din->in: 
+totalNumberOfChapters = 28 -> totalNumberOfChapters = 28+50
+- In teofilact.js, decomenteaza cartea din variabila `bookMap`
+- Adauga in com-teofilact.txt conform ordinii din bookMap cartea, capitolele si versetele. 
+
 # BrowserBible v3
 
 Bible software that runs in the browser. See `changelog.md` for recent updates.
