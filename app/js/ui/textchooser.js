@@ -406,7 +406,6 @@ var TextChooser = function() {
 					var text = textsInLang[textIndex],
 						isDefaultText = checkIsDefaultText(text.id);
 
-					if (text_type == 'bible' ) {
 						if (mode == 'none' || mode == 'languages' || (isDefaultText && mode == 'default')) {
 							langHtml.push(
 								createTextRow(
@@ -420,7 +419,7 @@ var TextChooser = function() {
 						if (!hasDefaultText && isDefaultText) {
 							hasDefaultText = true;
 						}
-					} else if (text_type == 'deafbible' ) {
+					 else if (text_type == 'deafbible' ) {
 						langHtml.push(
 							createImageRow(
 									text,
@@ -430,7 +429,6 @@ var TextChooser = function() {
 
 					}
 				}
-				debugger;
 				if (mode == 'none' || mode == 'languages' || (hasDefaultText && mode == 'default')) {
 
 					var languageDisplayTitle = '';
