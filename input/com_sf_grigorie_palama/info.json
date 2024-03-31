@@ -1,0 +1,12 @@
+{"langName": "Roumanian",
+ "name": "Tâlcuirile Sfântului Grigorie Palama",
+ "nameEnglish": "",
+ "abbr": "Palama",
+ "id": "com_sf_grigorie_palama",
+ "lang": "eng",
+ "langNameEnglish": "Roumanian",
+ "generator": "palama",
+ "filename": "com-grigorie-palama.txt",
+ "type":"commentary",
+ "stylesheet":"style.css",
+ "dir": "ltr"}
