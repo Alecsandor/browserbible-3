@@ -81,9 +81,9 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 // 	'3Ma':	'M3',
 // 	Man:	'PN',
   Mat: 'MT',
-	Mar: 'MK',
-  Luk: 'LK',
-  Joh: 'JN',
+//	Mar: 'MK',
+//  Luk: 'LK',
+//  Joh: 'JN',
 //   Act: 'AC',
 //   Rom: 'RM',
 //   '1Co': 'C1',
@@ -124,7 +124,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 		rawText = fs.readFileSync( sourceFilePath , 'utf8'),
 		lines = rawText.split('\n'),
 		foundFirstVerse = false,
-		totalNumberOfChapters = 28+16+24+21, //modify this based on what it is in com-....txt (ex: Matei=28 cap, Marcu=16 cap...)
+		totalNumberOfChapters = 1, //modify this based on what it is in com-....txt (ex: Matei=28 cap, Marcu=16 cap...)
 		startBookIndex = 0,
 		endBookIndex = Object.keys(bookMap).length,
 
