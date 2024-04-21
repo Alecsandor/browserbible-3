@@ -5872,7 +5872,7 @@ const replacements = {
   'Deuteronom 34, 8':'<u>Deu_34:8</u>','Deuteronom 34,8':'<u>Deu_34:8</u>',
   'Deuteronom 34, 9':'<u>Deu_34:9</u>','Deuteronom 34,9':'<u>Deu_34:9</u>',
   'Deuteronom 34, 10':'<u>Deu_34:10</u>','Deuteronom 34,10':'<u>Deu_34:10</u>',
-  'Iosua 1, 1' :'<u>Jos_1:1</u>','Iosua 1,1':'<u>Jos_1:1</u>',
+  'Iosua 1, 1' :'<u>Jos_1:1</u>','Iosua 1,1':'<u>Jos_1:1</u>', 'Isus Navi 1, 1' :'<u>Jos_1:1</u>', 'Iisus Navi 1, 1' :'<u>Jos_1:1</u>',
   'Iosua 1, 2' :'<u>Jos_1:2</u>','Iosua 1,2':'<u>Jos_1:2</u>',
   'Iosua 1, 3' :'<u>Jos_1:3</u>','Iosua 1,3':'<u>Jos_1:3</u>',
   'Iosua 1, 4' :'<u>Jos_1:4</u>','Iosua 1,4':'<u>Jos_1:4</u>',
