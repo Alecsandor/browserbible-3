@@ -1,0 +1,12 @@
+{"langName": "Greek",
+ "name": "Tâlcuirile Sfântului Ioan Gură de Aur - Patrologia Graeca",
+ "nameEnglish": "",
+ "abbr": "Hrisostom_gr",
+ "id": "com_sf_ioan_gura_de_aur_gr",
+ "lang": "eng",
+ "langNameEnglish": "Greek",
+ "generator": "hrisostom_gr",
+ "filename": "com-ioan-gura-de-aur_gr.txt",
+ "type":"commentary",
+ "stylesheet":"style.css",
+ "dir": "ltr"}
