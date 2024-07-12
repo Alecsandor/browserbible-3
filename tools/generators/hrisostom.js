@@ -124,7 +124,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 		rawText = fs.readFileSync( sourceFilePath , 'utf8'),
 		lines = rawText.split('\n'),
 		foundFirstVerse = false,
-		totalNumberOfChapters = 8, //modify this based on what it is in com-....txt (dacă în comentariu se face referire la 2 capitole atunci adăugăm 2)(ex: Matei=28 cap, Marcu=16 cap...)
+		totalNumberOfChapters = 9, //modify this based on what it is in com-....txt (dacă în comentariu se face referire la 2 capitole atunci adăugăm 2)(ex: Matei=28 cap, Marcu=16 cap...)
 		startBookIndex = 0,
 		endBookIndex = Object.keys(bookMap).length,
 
