@@ -50,10 +50,10 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 		if (filename.indexOf('.txt') == -1) {
 			return;
 		}
-
 		var filePath = path.join(inputPath, filename),
 			rawText = fs.readFileSync(filePath, 'utf8'),
-			chaptersTexts = rawText.split(EOL+EOL);
+			chaptersTexts = rawText.split(EOL + EOL);
+		var description = undefined;
 			chaptersTexts.forEach(ct => {
 				var lines = ct.split(EOL);
 				if(lines.length === 1) return;
@@ -61,17 +61,24 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 					bookName = lines[0].split(' ')[0],
 					chapterNumber= lines[0].split(' ')[1].split(':')[0], 
 					verseNumber= lines[0].split(' ')[1].split(':')[1],
-					content= lines.slice(1);
-				
+					content = lines.slice(1);
 		// READ TEXT
 
 		
 		var dbsCode = bookMap[bookName];
-		if(dbsCode === undefined) {
+		if (dbsCode === undefined) {
 			notFoundBooks.push(bookName);
 			return;
 		}
-		if(verseNumber===undefined || bookNumber===undefined) return;
+		if (verseNumber === undefined || bookNumber === undefined) return;
+			if (verseNumber == 0 && bookNumber == 51) {
+				// build description
+				description = '';
+				for (let c of content) {
+					description += c.split(' ').slice(-1) + " ";
+				}
+				return;
+		}
 		for (var i=1, il=content.length; i<=il; i++) {
 			var line = lines[i].trim(),
 				parts = line.split(' ');
@@ -87,7 +94,6 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				dbsCode = bookInfo['dbsCode'],
 				chapterCode = dbsCode + '' + chapterNumber.toString(),
 				verseCode = chapterCode + '_' + verseNumber.toString();
-
 
 			// new book
 			if (bookNumber != lastBookNumber) {
@@ -141,7 +147,9 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 
 				if (chapterNumber == 1) {
 					currentChapter.html += '<div class="mt">' + bookName + '</div>' + bibleFormatter.breakChar;
-
+					if (description!==undefined) {
+						currentChapter.html += '<div>' + description + '</div>' + bibleFormatter.breakChar + '<br />';
+					}
 				}
 
 				currentChapter.html +=
@@ -201,7 +209,6 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 	info.divisionNames = validBookNames;
 	info.divisions = validBooks;
 	info.sections = validChapters;
-
 	return data;
 }
 
