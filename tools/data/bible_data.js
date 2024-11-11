@@ -1994,7 +1994,7 @@ var BOOK_DATA = [
 		"usfm": "1ES",
 		"osis": "1Esd",
 		"chapters": [],
-		"chapterCount": 9,
+		"chapterCount": 10,
 		"names": {
 			"eng": [
 				"1 Esdras"
