@@ -87,7 +87,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 			var	bookInfo = bibleData.getBookInfoByDbsCode( dbsCode ),
 				partOfSpeech = parts[1].trim().slice(0,2),
 				parsing = parts[1].trim().slice(2),
-				word = parts[2].trim(),
+				word = parts[0].trim(),
 				lemma = parts[0].trim(),
 				strongs = strongsLemmaKey[lemma] ?? strongsLemmaKey[word] ,
 
