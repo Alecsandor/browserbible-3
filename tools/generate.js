@@ -107,7 +107,6 @@ function convertFolder(inputPath) {
 		cleanFolder(outputPath);
 		// RUN GENERATOR
 		console.time('processText');
-		if(generatorName === 'byz') return;
 		var data = generator.generate(inputPath, info, createIndex, startProgress, updateProgress);
 		console.timeEnd('processText');
 

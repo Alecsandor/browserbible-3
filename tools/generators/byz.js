@@ -76,19 +76,19 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 			notFoundBooks.push(bookName);
 			return;
 		}
-		if(verseNumber===undefined) return;
+		if (verseNumber === undefined) return;
+				
 		const verseWords = verseContent.replaceAll('"', '').split(" ");
-		for (var i=1, il=verseWords.length; i<il; i++) {
+		for (var i = 0; i<verseWords.length-3; i+=3) {
 			
 			var	bookInfo = bibleData.getBookInfoByDbsCode( dbsCode ),
 				word = verseWords[i],
-				lemma = word.replaceAll(',', ''),
-				partOfSpeech = '', //todo see if u can take this in the future from somewhere
+				partOfSpeech = verseWords[i+2].replace('{', '').replace('}', ''),
 				parsing = '',//todo see if u can take this in the future from somewhere
 				dbsCode = bookInfo['dbsCode'],
 				chapterCode = dbsCode + '' + chapterNumber.toString(),
 				verseCode = chapterCode + '_' + verseNumber.toString();
-				strongs = strongsLemmaKey[lemma];
+				strongs = `G${verseWords[i+1]}`;
 
 			// new book
 			if (bookNumber != lastBookNumber) {
