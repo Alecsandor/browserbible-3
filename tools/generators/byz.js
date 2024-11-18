@@ -53,7 +53,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 
 		var filePath = path.join(inputPath, filename),
 			rawText = fs.readFileSync(filePath, 'utf8'),
-            versesTexts = rawText.split(new RegExp(EOL+'(?=[1-9])', 'g'));
+            versesTexts = rawText.split("\n");
 			versesTexts.shift(); //remove header chapter, verse, text
 			versesTexts.forEach(v => {
 				v = v.replace(new RegExp(EOL, 'g'), '');
@@ -121,7 +121,6 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 						'</div>' + bibleFormatter.breakChar + // paragraph
 						bibleFormatter.closeChapter();
 				}
-
 				// create new
 				currentChapter = {
 					id: chapterCode,
