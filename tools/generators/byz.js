@@ -4,7 +4,7 @@ var fs = require('fs'),
 	bibleFormatter = require('../bible_formatter.js'),
 	verseIndexer = require('../verse_indexer.js');
 const bookMap = require('../bookMap.js');
-const { OT_BOOKS, AP_BOOKS } = require('../data/bible_data.js');
+const { NT_BOOKS, AP_BOOKS } = require('../data/bible_data.js');
 	stream = require('stream');
 
 
@@ -125,8 +125,8 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				// create new
 				currentChapter = {
 					id: chapterCode,
-					nextid: bibleData.getNextChapter(chapterCode, [...OT_BOOKS, ...AP_BOOKS]),
-					previd: bibleData.getPrevChapter(chapterCode, [...OT_BOOKS, ...AP_BOOKS]),
+					nextid: bibleData.getNextChapter(chapterCode, [...NT_BOOKS, ...AP_BOOKS]),
+					previd: bibleData.getPrevChapter(chapterCode, [...NT_BOOKS, ...AP_BOOKS]),
 					html: '',
 					title: bookName + ' ' + chapterNumber,
 				};
