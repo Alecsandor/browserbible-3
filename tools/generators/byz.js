@@ -66,6 +66,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				let verseContentStartPos = getVerseContentPosition(v, ',', 2)+1;
 				let verseContent = v.substring(verseContentStartPos);
 				var bookName = filename.split('.')[0].toLowerCase();
+				bookName = bookName.includes("-")? bookName.split('-')[1] : bookName;
 		// READ TEXT
 
 		//convert bookName to match the bookMap keys
