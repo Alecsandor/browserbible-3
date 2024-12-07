@@ -105,7 +105,7 @@ sofia.globals.mediaVideoClick = function(e) {
 		url = link.attr('href'),
 		title = link.attr('title');
 
-	sofia.globals.showVideo(url, title);
+	sofia.globals.showVideo(url, title, { filename: url });
 
 	return false;
 };
@@ -130,14 +130,16 @@ sofia.globals.mediaVideoJfmClick = function(e) {
 	return false;
 };
 
-sofia.globals.showVideo = function(videoUrl, title) {
-
+sofia.globals.showVideo = function(videoUrl, title, videoInfo) {
+	debugger;
 	sofia.globals.videoWindow.body.html('');
 
 	// add video
-	var video = $('<video autoplay controls src="' + videoUrl + '" style="width:100%; height: auto;"></video>')
+	// var video = $('<video autoplay controls src="' + videoUrl + '" style="width:100%; height: auto;"></video>')
+	// 				.appendTo(sofia.globals.videoWindow.body);
+	
+	var video = $(`<iframe width="${videoInfo['widthPopup'] !== undefined ? videoInfo['widthPopup'] : 640}" height="${videoInfo['heightPopup'] !== undefined ? videoInfo['heightPopup'] : 340}" src="${videoInfo["filename"]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
 					.appendTo(sofia.globals.videoWindow.body);
-
 	// title?
 	if (title) {
 		sofia.globals.videoWindow.title.html(title);

@@ -128,12 +128,15 @@ var MediaWindow = function(id, parent, data) {
 			// add media
 			if (typeof mediaForVerse != 'undefined') {
 
-				for (var j=0, jl = mediaForVerse.length; j<jl; j++) {
+				for (var j = 0, jl = mediaForVerse.length; j < jl; j++) {
+					if (mediaLibrary.folder === "video") {
+						html += `<iframe width="${mediaForVerse[j]["width"] !== undefined ? mediaForVerse[j]["width"] : 640}" height="${mediaForVerse[j]["height"] !== undefined ? mediaForVerse[j]["height"] : 340}" src="${mediaForVerse[j]["filename"]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br /><br />`;
+						continue;
+					}
 					var mediaInfo = mediaForVerse[j],
 						baseUrl = sofia.config.baseContentUrl + 'content/' + 'media/' + mediaLibrary.folder + '/',
 						fullUrl = baseUrl + mediaInfo.filename + '.' + mediaInfo.exts[0],
 						thumbUrl = baseUrl + mediaInfo.filename + '-thumb.jpg';
-
 					html += '<a href="' + fullUrl + '" class="mediatype-' + mediaLibrary.type + '" target="_blank" ' + (mediaInfo.name ? 'title="' + mediaInfo.name + '"' : '') + ' data-filename="' + mediaInfo.filename + '">' +
 								'<img src="' + thumbUrl + '" />' +
 								//((mediaLibrary.type != 'image') ? '<span>' + mediaInfo.name + '</span>'  : '') +
