@@ -1,10 +1,14 @@
 {
 	"LK1_1": [
 		{
-			"filename": "02",
+			"filename": "https://www.youtube.com/embed/NdCyyzbOeE8", 
 			"exts": [
 				"mp4"
 			],
+			"widthPopup": "640",
+			"heightPopup": "340",
+			"width": "640",
+			"height": "340",
 			"name": "The Birth of Jesus",
 			"description": "God sends the angel Gabriel to a town in Galilee called Nazareth. He appears to Mary, a young virgin engaged in marriage to Joseph. Gabriel announces the coming miracle birth of Jesus.  Jesus Christ will be the Son of God, the promised Messiah."
 		}

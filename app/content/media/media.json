@@ -2,16 +2,16 @@
 	"instructions": "List all media folders here (names are optional)",
 	"media": [
 		{
+			"folder": "video",
+			"type": "video",
+			"iconClassName": "video-icon",
+			"name": "Jesus Film (Local)"
+		},
+		{
 			"folder": "maps",
 			"type": "image",
 			"iconClassName" : "map-icon",
 			"name": "Maps"
-		},
-		{
-			"folder": "jesusfilmmedia",
-			"type": "jfm",
-			"iconClassName" : "video-icon",
-			"name": "Jesus Film Media"
 		},
 		{
 			"folder": "images",
@@ -22,10 +22,10 @@
 	],
 	"unused": [
 		{
-			"folder": "video",
-			"type": "video",
-			"iconClassName" : "video-icon",
-			"name": "Jesus Film (Local)"
+			"folder": "jesusfilmmedia",
+			"type": "jfm",
+			"iconClassName": "video-icon",
+			"name": "Jesus Film Media"
 		}
 	]
 }
