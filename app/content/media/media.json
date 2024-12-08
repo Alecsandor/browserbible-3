@@ -5,13 +5,7 @@
 			"folder": "video",
 			"type": "video",
 			"iconClassName": "video-icon",
-			"name": "Jesus Film (Local)"
-		},
-		{
-			"folder": "maps",
-			"type": "image",
-			"iconClassName" : "map-icon",
-			"name": "Maps"
+			"name": "video"
 		},
 		{
 			"folder": "images",
@@ -26,6 +20,12 @@
 			"type": "jfm",
 			"iconClassName": "video-icon",
 			"name": "Jesus Film Media"
-		}
-	]
+		},
+	{
+		"folder": "maps",
+		"type": "image",
+		"iconClassName" : "map-icon",
+		"name": "Maps"
+	}
+]
 }
