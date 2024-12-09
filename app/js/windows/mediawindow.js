@@ -79,10 +79,10 @@ var MediaWindow = function(id, parent, data) {
 		var images = gallery.find('img');
 
 		// show error message
-		if (images.length == 0) {
-			gallery.html('No media for this chapter');
-			return;
-		}
+		// if (images.length == 0) {
+		// 	gallery.html('No media for this chapter');
+		// 	return;
+		// }
 
 		// determine if all have loaded
 		images.on('load', function() {
