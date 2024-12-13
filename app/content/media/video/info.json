@@ -12,5 +12,33 @@
 			"name": "Trupurile după învierea de obște",
 			"description": "Părintele preot profesor Marian Vild ne tâlcuiește cum vor fi trupurile după învierea cea de obște așa cum reiese din Sfintele Scripturi."
 		}
+	],
+	"RV13_1": [
+		{
+			"filename": 	"https://www.youtube.com/embed/cq73KRYNWb0?si=a8t2GPdJzTh99bZL&amp;start=605", 
+			"exts": [
+				"mp4"
+			],
+			"widthPopup": "640",
+			"heightPopup": "340",
+			"width": "640",
+			"height": "340",
+			"name": "Despre fiara de pe",
+			"description": ""
+		}
+	],
+	"RV1_1": [
+		{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": [
+				"mp4"
+			],
+			"widthPopup": "640",
+			"heightPopup": "340",
+			"width": "640",
+			"height": "340",
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}
 	]
 	}
