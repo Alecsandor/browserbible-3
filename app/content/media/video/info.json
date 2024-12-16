@@ -137,7 +137,28 @@
 			"heightPopup": "340",
 			"width": "640",
 			"height": "340",
-			"name": "Despre fiara de pe",
+			"name": "Cuvântul lui Dumnezeu pentru noi. Apocalipsa și sfârșitul istoriei - Pr.  Conf. Univ. Dr. Vasile Mihoc",
+			"description": ""
+		}],
+		"RV13_15": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/FqjNurNo_pU?si=61-bLqNUfjq4xUn5", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 13:15-18 - exegeză patristică despre semnul fiarei. P. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+		"RV14_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/Qm4DOJsyYQ4?si=0LNzEllEbbplpvgX", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 14:1-5 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+		"RV14_6": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/9Jl0N9yD4Hc?si=lA_TS4ZXjnWBmR-x", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 14:1-5 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
 			"description": ""
 		}]
 }
