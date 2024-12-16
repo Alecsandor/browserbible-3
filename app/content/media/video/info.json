@@ -1,44 +1,143 @@
 {
-	"C115_1": [
-		{
+	"LV4_20": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=EzUN9m2w2jXgzPDt&amp;start=425", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"JG9_23": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=272", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"S116_14": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=312", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": ""
+		}],
+		"S118_10": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=427", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": ""
+		}],
+		"TB6_7": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=507", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": ""
+		}],
+		"MT8_28": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=609", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": ""
+		}],
+		"MT16_19": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1396", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"MT18_19": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1429", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"MT26_26": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1130", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"MK1_2": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=Li2Ff66fKJTphsns&amp;start=824", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+		"JN20_22": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=Wc65olvg-odb2lgR&amp;start=1375", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": ""
+		}],
+	"C115_1": 
+		[{
 			"filename": "https://www.youtube.com/embed/NdCyyzbOeE8", 
-			"exts": [
-				"mp4"
-			],
+			"exts": ["mp4"],
 			"widthPopup": "640",
 			"heightPopup": "340",
 			"width": "640",
 			"height": "340",
 			"name": "Trupurile după învierea de obște",
 			"description": "Părintele preot profesor Marian Vild ne tâlcuiește cum vor fi trupurile după învierea cea de obște așa cum reiese din Sfintele Scripturi."
-		}
-	],
-	"RV13_1": [
-		{
+		}],
+	"RV1_1": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+	"RV2_1": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+	"RV3_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+	"RV4_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+	 	}],
+	"RV5_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+	"RV6_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": ""
+		}],
+	"RV13_1": 
+		[{
 			"filename": 	"https://www.youtube.com/embed/cq73KRYNWb0?si=a8t2GPdJzTh99bZL&amp;start=605", 
-			"exts": [
-				"mp4"
-			],
+			"exts": ["mp4"],
 			"widthPopup": "640",
 			"heightPopup": "340",
 			"width": "640",
 			"height": "340",
 			"name": "Despre fiara de pe",
 			"description": ""
-		}
-	],
-	"RV1_1": [
-		{
-			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
-			"exts": [
-				"mp4"
-			],
-			"widthPopup": "640",
-			"heightPopup": "340",
-			"width": "640",
-			"height": "340",
-			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
-			"description": ""
-		}
-	]
-	}
+		}]
+}
