@@ -34,6 +34,12 @@
 			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
 			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
 		}],
+		"MT1_18": 
+		[{ "filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=497",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
+		}],
 		"MT8_28": 
 		[{
 		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=609", 
@@ -68,6 +74,19 @@
 			"exts": ["mp4"],
 			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
 			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],"MK6_3": 
+		[{
+			"filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=974",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
+		}],
+		"LK1_26": 
+		[{
+			"filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=146",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
 		}],
 		"JN20_22": 
 		[{
@@ -161,4 +180,5 @@
 			"name": "Apocalipsa 14:6-11 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
 			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
 		}]
+		
 }
