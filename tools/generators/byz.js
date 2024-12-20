@@ -174,7 +174,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 			}
 
 			// add word
-			currentChapter.html += '<l' + (strongs != 'undefined' && typeof strongs != 'undefined' ? ' s="' + strongs + '"' : '') + ' m="' + partOfSpeech + '-' + parsing.replace(/-/gi,'') + '">' + word + '</l> ';
+			currentChapter.html += '<l' + (strongs != 'undefined' && typeof strongs != 'undefined' ? ' s="' + strongs + '"' : '') + ' m="' + partOfSpeech + '">' + word + '</l> ';
 
 			if (createIndex && strongs) {
 				verseIndexer.indexStrongs(verseCode, strongs, data.indexLemmaData, info.lang);
