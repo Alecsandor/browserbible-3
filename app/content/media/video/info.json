@@ -1,44 +1,184 @@
 {
-	"C115_1": [
-		{
+	"LV4_20": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=EzUN9m2w2jXgzPDt&amp;start=425", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru MIHĂILĂ"
+		}],
+		"JG9_23": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=272", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
+		}],
+		"S116_14": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=312", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
+		}],
+		"S118_10": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=427", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
+		}],
+		"TB6_7": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=507", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
+		}],
+		"MT1_18": 
+		[{ "filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=497",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
+		}],
+		"MT8_28": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/fszPZvLpKRs?si=DYpflV0c5tf0HYiw&amp;start=609", 
+			"exts": ["mp4"],
+			"name": "Exorcizarea celor doi demonizați din ținutul Gadarei. Posesiunea demonică în Sfânta Scriptură",
+			"description": "Lect. Univ. Dr. Cristinel Iatan, Facultatea de Teologie Ortodoxă din București"
+		}],
+		"MT16_19": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1396", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],
+		"MT18_19": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1429", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],
+		"MT26_26": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=94E65aXMXTBlKue7&amp;start=1130", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],
+		"MK1_2": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=Li2Ff66fKJTphsns&amp;start=824", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],"MK6_3": 
+		[{
+			"filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=974",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
+		}],
+		"LK1_26": 
+		[{
+			"filename": 	"https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fradiotrinitas%2Fvideos%2F129998573523893%2F&show_text=false&width=560&t=146",
+			"exts": ["mp4"],
+			"name": "Cum este prezentată Născătoarea de Dumnezeu în Evangheliile după Matei, Luca și Ioan.",
+			"description": "Diac. Dr. Sabin Preda"
+		}],
+		"JN20_22": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/-DCxkhuQsAQ?si=Wc65olvg-odb2lgR&amp;start=1375", 
+			"exts": ["mp4"],
+			"name": "Iertarea păcatelor. Jertfele Vechiului Testament și sângele lui Hristos",
+			"description": "Diac. Conf. Univ. Dr. Alexandru Mihăilă"
+		}],
+	"C115_1": 
+		[{
 			"filename": "https://www.youtube.com/embed/NdCyyzbOeE8", 
-			"exts": [
-				"mp4"
-			],
+			"exts": ["mp4"],
 			"widthPopup": "640",
 			"heightPopup": "340",
 			"width": "640",
 			"height": "340",
 			"name": "Trupurile după învierea de obște",
 			"description": "Părintele preot profesor Marian Vild ne tâlcuiește cum vor fi trupurile după învierea cea de obște așa cum reiese din Sfintele Scripturi."
-		}
-	],
-	"RV13_1": [
-		{
-			"filename": 	"https://www.youtube.com/embed/cq73KRYNWb0?si=a8t2GPdJzTh99bZL&amp;start=605", 
-			"exts": [
-				"mp4"
-			],
-			"widthPopup": "640",
-			"heightPopup": "340",
-			"width": "640",
-			"height": "340",
-			"name": "Despre fiara de pe",
-			"description": ""
-		}
-	],
-	"RV1_1": [
-		{
-			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
-			"exts": [
-				"mp4"
-			],
-			"widthPopup": "640",
-			"heightPopup": "340",
-			"width": "640",
-			"height": "340",
+		}],
+	"RV1_1": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
 			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
-			"description": ""
-		}
-	]
-	}
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+	"RV2_1": 
+		[{
+		  "filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+	"RV3_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+	"RV4_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+	 	}],
+	"RV5_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+	"RV6_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/EtTO5dmmbbQ?si=jZihGB7wdWgPjWSp", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 1:1-6:17 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+	"RV13_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/cq73KRYNWb0?si=a8t2GPdJzTh99bZL&amp;start=605", 
+			"exts": ["mp4"],
+			"widthPopup": "640",
+			"heightPopup": "340",
+			"width": "640",
+			"height": "340",
+			"name": "Cuvântul lui Dumnezeu pentru noi. Apocalipsa și sfârșitul istoriei - Pr.  Conf. Univ. Dr. Vasile Mihoc",
+			"description": "Pr.  Conf. Univ. Dr. Vasile Mihoc"
+		}],
+		"RV13_15": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/FqjNurNo_pU?si=61-bLqNUfjq4xUn5", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 13:15-18 - exegeză patristică despre semnul fiarei. P. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+		"RV14_1": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/Qm4DOJsyYQ4?si=0LNzEllEbbplpvgX", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 14:1-5 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}],
+		"RV14_6": 
+		[{
+			"filename": 	"https://www.youtube.com/embed/9Jl0N9yD4Hc?si=lA_TS4ZXjnWBmR-x", 
+			"exts": ["mp4"],
+			"name": "Apocalipsa 14:6-11 - exegeză patristică - Pr. Bogdan Vlaicu şi M. Filotheu Bălan",
+			"description": "Pr. Bogdan Vlaicu şi M. Filotheu Bălan"
+		}]
+		
+}
