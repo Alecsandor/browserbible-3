@@ -30,9 +30,9 @@ bible.morphology['robinson'] = {
 			case 'Q':
 			case 'F':
 			case 'S':
-				var c = this.nounCases[parsingInfo.substring(0, 1)];
-				var n = this.wordNumber[parsingInfo.substring(1, 2)];
-				var g = this.wordGender[parsingInfo.substring(2, 3)];
+				var c = this.nounCases[parsingInfo.substring(0, 1)] ?? "";
+				var n = this.wordNumber[parsingInfo.substring(1, 2)] ?? "";
+				var g = this.wordGender[parsingInfo.substring(2, 3)] ?? "";
 				formattedParsing = c + ((n) ? ', ' + n + ((g) ? ', ' + g : '') : '');
 				break;
 
@@ -41,12 +41,12 @@ bible.morphology['robinson'] = {
 				var firstLetter = parsingInfo.substr(0,1);
 				if (firstLetter == '1' || firstLetter == '2') {
 
-					var p = this.wordPerson[parsingInfo.substring(0, 1)];
+					var p = this.wordPerson[parsingInfo.substring(0, 1)] ?? "";
 					var c = this.nounCases[parsingInfo.substring(1, 2)];
 					var n = this.wordNumber[parsingInfo.substring(2, 3)];
 					formattedParsing = p + ((c) ? ', ' + c + ((n) ? ', ' + n : '') : '');
 				} else {
-					var c = this.nounCases[parsingInfo.substring(0, 1)];
+					var c = this.nounCases[parsingInfo.substring(0, 1)] ?? "";
 					var n = this.wordNumber[parsingInfo.substring(1, 2)];
 					var g = this.wordGender[parsingInfo.substring(2, 3)];
 					formattedParsing = c + ((n) ? ', ' + n + ((g) ? ', ' + g : '') : '');
@@ -55,8 +55,8 @@ bible.morphology['robinson'] = {
 				break;
 
 			case 'A':
-				var c = this.nounCases[parsingInfo.substring(0, 1)];
-				var n = this.wordNumber[parsingInfo.substring(1, 2)];
+				var c = this.nounCases[parsingInfo.substring(0, 1)] ?? "";
+				var n = this.wordNumber[parsingInfo.substring(1, 2)] ?? "";
 				formattedParsing =   c + ', ' + n;
 				break;
 

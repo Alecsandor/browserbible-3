@@ -88,7 +88,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				partOfSpeech = parts[1].trim().slice(0,2),
 				parsing = parts[1].trim().slice(2),
 				word = parts[0].trim(),
-				lemma = parts[0].trim(),
+				lemma = parts[2].trim(),
 				strongs = strongsLemmaKey[lemma] ?? strongsLemmaKey[word] ,
 
 				dbsCode = bookInfo['dbsCode'],
