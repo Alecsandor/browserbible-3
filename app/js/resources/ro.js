@@ -48,7 +48,7 @@ sofia.resources['ro'] = {
 				"title": "Engleză, persoana a 2-a plural"
 			},
 			"lemmapopup": {
-				"findalloccurrences": "Găsește toate ocurențele (aproximativ __număr__)"
+				"findalloccurrences": "Găsește toate ocurențele (aproximativ __count__)"
 			}
 		},
 		"windows": {
