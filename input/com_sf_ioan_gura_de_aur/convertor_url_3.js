@@ -40,6 +40,8 @@ const bookAbbreviations = {
   'hagai': 'Hag',
   'zaharia': 'Zec',
   'maleahi': 'Mal',
+  'Cartea înțelepciunii lui Isus fiul lui Sirah' : 'Sir',
+  'Cartea înțelepciunii lui Solomon': 'Wis',
 
  // Cărți din Noul Testament
   'matei': 'Mat',
