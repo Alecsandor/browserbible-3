@@ -79,11 +79,26 @@ function convertFolder(inputPath) {
 	console.log({inputPath});
 	var infoFilePath = path.join(inputPath, 'info.json'),
 		startDate = new Date();
-
 	if (fs.existsSync(infoFilePath)) {
 
-		var info = JSON.parse( fs.readFileSync(infoFilePath, 'utf8') ),
-			generatorName = info.generator,
+		var infoContent = fs.readFileSync(infoFilePath, 'utf8').trim();
+		
+		if (!infoContent) {
+			console.error('Error: Empty info.json file at:', infoFilePath);
+			return;
+		}
+
+		var info;
+		try {
+			info = JSON.parse(infoContent);
+		} catch (jsonError) {
+			console.error('Error parsing JSON in file:', infoFilePath);
+			console.error('JSON content:', infoContent.substring(0, 200) + (infoContent.length > 200 ? '...' : ''));
+			console.error('Error:', jsonError.message);
+			return;
+		}
+
+		var generatorName = info.generator,
 			outputPath = path.join(baseOutput, info['id']),
 			indexOutputPath = path.join(outputPath, 'index'),
 			indexLemmaOutputPath = path.join(outputPath, 'indexlemma'),

@@ -23,7 +23,7 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 			chapterData: [],
 			indexData: {},
 			indexLemmaData: {},
-			aboutHtml: fs.existsSync(aboutPath) ? fs.readFileSync(path.join(inputPath, 'about.html'), 'utf8') : ''
+			aboutHtml: fs.existsSync(aboutPath) ? fs.readFileSync(aboutPath, 'utf8') : ''
 		}
 
 	skipAheadKeys = ['', 'add', 'add*', 'wj', 'wj*', 'x', 'x*', 'f', 'f*', 'qs', 'ft', 'bk', 'fqa'];
@@ -63,7 +63,9 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 			currentVerseText = '',
 			notes = '',
 			noteNumber = 1,
-			chapterVerse = '';
+			chapterVerse = '',
+			hasDecorativeInitial = false,
+			decorativeInitialLetter = '';
 
 		for (var i = 0, il = lines.length; i < il; i++) {
 			var line = lines[i],
@@ -122,6 +124,10 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 
 					bookCodes.push(currentBookInfo.dbsCode);
 					//console.log('book', currentBookInfo != null ? currentBookInfo.names.eng[0] : 'NULL: ' + bookId);
+					
+					// Reset decorative initial variables for new book
+					hasDecorativeInitial = false;
+					decorativeInitialLetter = '';
 					break;
 
 				// intro stuff
@@ -156,8 +162,29 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 					var formatted = usfmParser.formatText(usfm.text, noteNumber, chapterVerse);
 					notes += formatted.notes;
 
-
-					currentChapterHtml += '<div class="' + usfm.key + '">' + formatted.text + '</div>' + breakChar;
+					// Check if this is a main title (mt) and if book has decorative header
+					if (usfm.key === 'mt' && info.bookHeaders && info.bookHeaders.enabled) {
+						var bookHeader = info.bookHeaders.books[currentBookInfo.dbsCode];
+						if (bookHeader) {
+							// Add decorative book header before the title
+							var ornamentPath = info.bookHeaders.basePath + bookHeader.ornament;
+							var titleText = formatted.text; // Use original USFM title
+							var headerHtml = '<div class="book-header">' +
+								'<div class="book-header-ornament">' +
+								'<img src="' + ornamentPath + '" alt="Ornament decorativ din Biblia Șerban Cantacuzino (1688) ediția 1988" ' +
+								'title="Ornament decorativ din Biblia Șerban Cantacuzino (1688) ediția 1988" />' +
+								'</div>' +
+								'<div class="book-header-title">' + titleText + '</div>' +
+								'</div>';
+							currentChapterHtml += headerHtml + breakChar;
+						} else {
+							// Default title processing
+							currentChapterHtml += '<div class="' + usfm.key + '">' + formatted.text + '</div>' + breakChar;
+						}
+					} else {
+						// Default processing for other heading types
+						currentChapterHtml += '<div class="' + usfm.key + '">' + formatted.text + '</div>' + breakChar;
+					}
 
 
 
@@ -292,6 +319,28 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 
 					currentChapterNum = usfm.text;
 					currentChapterCode = bibleFormatter.formatChapterCode(currentBookInfo.dbsCode, currentChapterNum);
+					
+					// Store decorative initial configuration for later use in verse processing
+					var hasDecorativeInitial = false;
+					var decorativeInitialLetter = '';
+					var decorativeInitialType = 'complex'; // default type
+					if (info.decorativeInitials && info.decorativeInitials.enabled) {
+						var bookInitials = info.decorativeInitials.books[currentBookInfo.dbsCode];
+						if (bookInitials && bookInitials.chapters && bookInitials.chapters[currentChapterNum]) {
+							var chapterConfig = bookInitials.chapters[currentChapterNum];
+							hasDecorativeInitial = true;
+							
+							// Support both old format (string) and new format (object)
+							if (typeof chapterConfig === 'string') {
+								decorativeInitialLetter = chapterConfig;
+								decorativeInitialType = 'complex'; // backward compatibility
+							} else if (typeof chapterConfig === 'object') {
+								decorativeInitialLetter = chapterConfig.letter;
+								decorativeInitialType = chapterConfig.type || 'complex';
+							}
+						}
+					}
+					
 					currentChapterHtml += '<div class="c">' +
 						(currentBookInfo.dbsCode == 'PS' ?
 						(currentHeader.substring(currentHeader.length - 1) == 's' ? currentHeader.substring(0, currentHeader.length - 1) : currentHeader) + ' ' : ''
@@ -335,10 +384,43 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 					var formatted = usfmParser.formatText(usfm.text, noteNumber, chapterVerse);
 					notes += formatted.notes;
 
-					currentChapterHtml += bibleFormatter.openVerse(currentVerseCode, currentVerseNum) +
-					//'<span class="v-num v-' + currentVerseNum + '">' + currentVerseNum + '&nbsp;</span>' +
-					//'<span class="v ' + currentVerseCode + '" data-id="' + currentVerseCode + '">' +
-					formatted.text;
+					// Special handling for first verse with decorative initial
+					var isFirstVerse = (currentVerseNum == '1');
+					var shouldUseDecorativeInitial = isFirstVerse && hasDecorativeInitial;
+					
+					if (shouldUseDecorativeInitial) {
+						// For first verse with decorative initial:
+						// 1. Add verse number first
+						// 2. Add decorative initial
+						// 3. Remove first letter from text (it's replaced by the decorative initial)
+						
+						// Determine the correct path based on type
+						var basePath;
+						if (decorativeInitialType === 'simple' && info.decorativeInitials.simplePath) {
+							basePath = info.decorativeInitials.simplePath;
+						} else if (decorativeInitialType === 'complex' && info.decorativeInitials.complexPath) {
+							basePath = info.decorativeInitials.complexPath;
+						} else {
+							// Fallback to default path
+							basePath = info.decorativeInitials.basePath;
+						}
+						
+						var imagePath = basePath + decorativeInitialLetter + '.png';
+						var textWithoutFirstLetter = formatted.text.replace(/^[A-Za-zÀ-ÿĂÂÎȘȚăâîșț]/, '');
+						
+						currentChapterHtml += '<span class="v-num v-' + currentVerseNum + '">' + currentVerseNum + '&nbsp;</span>' +
+							'<div class="decorative-initial-container">' +
+							'<img src="' + imagePath + '" alt="Inițială decorativă ' + decorativeInitialLetter + '" ' +
+							'title="Inițială decorativă din Biblia Șerban Cantacuzino (1688) ediția 1988" ' +
+							'class="decorative-initial ' + decorativeInitialType + '" data-letter="' + decorativeInitialLetter + '" data-type="' + decorativeInitialType + '" />' +
+							'</div>' +
+							'<span class="v ' + currentVerseCode + '" data-id="' + currentVerseCode + '">' +
+							textWithoutFirstLetter;
+					} else {
+						// Normal verse processing
+						currentChapterHtml += bibleFormatter.openVerse(currentVerseCode, currentVerseNum) +
+							formatted.text;
+					}
 
 
 					verseIsOpen = true;
@@ -500,9 +582,71 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 
 		chapter.previd = (i == 0) ? null : data.chapterData[i - 1].id;
 		chapter.nextid = (i == il - 1) ? null : data.chapterData[i + 1].id;
+		
+		// Check if this is the last chapter of a book that should have a decorative image
+		var shouldAddDecorativeImage = false;
+		var decorativeImageConfig = null;
+		
+		if (info.decorativeImages && chapter.nextid) {
+			// Extract book code from current and next chapter IDs
+			var currentMatch = chapter.id.match(/^([A-Z]+)(\d+)$/);
+			var nextMatch = chapter.nextid.match(/^([A-Z]+)(\d+)$/);
+			
+			if (currentMatch && nextMatch) {
+				var currentBookCode = currentMatch[1];
+				var currentChapter = parseInt(currentMatch[2]);
+				var nextBookCode = nextMatch[1];
+				var nextChapter = parseInt(nextMatch[2]);
+				
+				// Handle special cases like C2 (2 Corinthians)
+				if (currentBookCode === 'C' && currentChapter >= 14) {
+					currentBookCode = 'C2'; // 2 Corinthians chapters 14+
+				}
+				if (nextBookCode === 'C' && nextChapter >= 14) {
+					nextBookCode = 'C2'; // 2 Corinthians chapters 14+
+				}
+				
+				// If next chapter is from a different book, this is the last chapter of current book
+				if (currentBookCode !== nextBookCode && info.decorativeImages[currentBookCode]) {
+					shouldAddDecorativeImage = true;
+					decorativeImageConfig = info.decorativeImages[currentBookCode];
+				}
+			}
+		} else if (info.decorativeImages && !chapter.nextid) {
+			// This is the very last chapter - check if its book should have an image
+			var currentMatch = chapter.id.match(/^([A-Z]+)(\d+)$/);
+			
+			if (currentMatch) {
+				var currentBookCode = currentMatch[1];
+				var currentChapter = parseInt(currentMatch[2]);
+				
+				// Handle special cases like C2 (2 Corinthians)
+				if (currentBookCode === 'C' && currentChapter >= 14) {
+					currentBookCode = 'C2'; // 2 Corinthians chapters 14+
+				}
+				
+				if (info.decorativeImages[currentBookCode]) {
+					shouldAddDecorativeImage = true;
+					decorativeImageConfig = info.decorativeImages[currentBookCode];
+				}
+			}
+		}
+		
+		// Add decorative image if needed
+		var decorativeImageHtml = '';
+		if (shouldAddDecorativeImage && decorativeImageConfig.position === 'end') {
+			decorativeImageHtml = '<div class="decorative-image book-end">' +
+				'<img src="content/media/images/' + decorativeImageConfig.image + '" ' +
+				'alt="' + (decorativeImageConfig.alt || 'Decorative image') + '" ' +
+				'title="' + (decorativeImageConfig.description || '') + '" ' +
+				'class="book-ornament" />' +
+				'</div>';
+		}
+		
 		chapter.html =
 			bibleFormatter.openChapter(info, chapter) +
 			chapter.html +
+			decorativeImageHtml +
 			bibleFormatter.closeChapter();
 
 	}

@@ -1,0 +1,1400 @@
+﻿{
+"id": "ron_bsb",
+"abbr": "BSB",
+"name": "Biblia Serban Cantacuzino (1688)",
+"nameEnglish": "",
+"lang": "ron",
+"langName": "Română",
+"langNameEnglish": "Roumanian",
+"dir": "ltr",
+"generator": "usfm",
+"bookHeaders": {
+"enabled": true,
+"basePath": "content/media/images/headers/",
+"books": {		"GN": {
+			"ornament": "gen-header-ornament.svg",
+			"title": "FACEREA"
+		}
+}
+},
+"decorativeInitials": {
+	"enabled": true,
+	"basePath": "content/media/images/initials/",
+	"complexPath": "content/media/images/initials/complex/",
+	"simplePath": "content/media/images/initials/simple/",
+	"books": {
+  "GN": {
+    "chapters": {
+      "1": {
+        "letter": "D",
+        "type": "complex"
+      },
+      "2": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "3": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "4": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "5": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "6": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "7": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "8": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "9": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "10": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "11": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "12": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "13": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "14": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "15": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "16": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "17": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "18": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "19": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "20": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "21": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "22": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "23": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "24": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "25": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "26": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "27": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "28": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "29": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "30": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "31": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "32": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "33": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "34": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "35": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "36": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "37": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "38": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "39": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "40": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "41": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "42": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "43": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "44": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "45": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "46": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "47": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "48": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "49": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "50": {
+        "letter": "S",
+        "type": "simple"
+      }
+    }
+  },
+  "EX": {
+    "chapters": {
+      "1": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "2": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "3": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "4": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "5": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "6": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "7": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "8": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "9": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "10": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "11": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "12": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "13": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "14": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "15": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "16": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "17": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "18": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "19": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "20": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "21": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "22": {
+        "letter": "D",
+        "type": "simple"
+      },
+      "23": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "24": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "25": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "26": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "27": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "28": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "29": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "30": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "31": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "32": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "33": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "34": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "35": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "36": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "37": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "38": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "39": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "40": {
+        "letter": "S",
+        "type": "simple"
+      }
+    }
+  },
+  "LV": {
+    "chapters": {
+      "1": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "2": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "3": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "4": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "5": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "6": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "7": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "8": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "9": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "10": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "11": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "12": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "13": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "14": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "15": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "16": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "17": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "18": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "19": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "20": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "21": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "22": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "23": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "24": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "25": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "26": {
+        "letter": "C",
+        "type": "simple"
+      },
+      "27": {
+        "letter": "S",
+        "type": "simple"
+      }
+    }
+  },
+  "NU": {
+    "chapters": {
+      "1": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "2": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "3": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "4": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "5": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "6": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "7": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "8": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "9": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "10": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "11": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "12": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "13": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "14": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "15": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "16": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "17": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "18": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "19": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "20": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "21": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "22": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "23": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "24": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "25": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "26": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "27": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "28": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "29": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "30": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "31": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "32": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "33": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "34": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "35": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "36": {
+        "letter": "S",
+        "type": "simple"
+      }
+    }
+  },
+  "DT": {
+    "chapters": {
+      "1": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "2": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "3": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "4": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "5": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "7": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "8": {
+        "letter": "T",
+        "type": "simple"
+      },
+      "9": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "10": {
+        "letter": "P",
+        "type": "simple"
+      },
+      "11": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "12": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "13": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "14": {
+        "letter": "F",
+        "type": "simple"
+      },
+      "15": {
+        "letter": "P",
+        "type": "simple"
+      },
+      "16": {
+        "letter": "P",
+        "type": "simple"
+      },
+      "17": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "18": {
+        "letter": "L",
+        "type": "simple"
+      },
+      "19": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "20": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "21": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "22": {
+        "letter": "L",
+        "type": "simple"
+      },
+      "23": {
+        "letter": "L",
+        "type": "simple"
+      },
+      "24": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "25": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "26": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "27": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "28": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "29": {
+        "letter": "A",
+        "type": "simple"
+      },
+      "30": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "31": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "32": {
+        "letter": "I",
+        "type": "simple"
+      },
+      "33": {
+        "letter": "S",
+        "type": "simple"
+      },
+      "34": {
+        "letter": "S",
+        "type": "simple"
+      }
+    }
+  },
+			"JS": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"JG": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"RT": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"S1": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"S2": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"K1": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"K2": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"R1": {
+				"chapters": {
+					"1": {
+						"letter": "A",
+						"type": "simple"
+					}
+				}
+			},
+			"R2": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"ER": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"NH": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"ET": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "simple"
+					}
+				}
+			},
+			"JB": {
+				"chapters": {
+					"1": {
+						"letter": "O",
+						"type": "simple"
+					}
+				}
+			},
+			"PS": {
+				"chapters": {
+					"1": {
+						"letter": "P",
+						"type": "simple"
+					}
+				}
+			},
+			"PR": {
+				"chapters": {
+					"1": {
+						"letter": "P",
+						"type": "simple"
+					}
+				}
+			},
+			"EC": {
+				"chapters": {
+					"1": {
+						"letter": "G",
+						"type": "simple"
+					}
+				}
+			},
+			"SS": {
+				"chapters": {
+					"1": {
+						"letter": "S",
+						"type": "simple"
+					}
+				}
+			},
+			"IS": {
+				"chapters": {
+					"1": {
+						"letter": "V",
+						"type": "simple"
+					}
+				}
+			},
+			"JR": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"LM": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"EK": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"DN": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "simple"
+					}
+				}
+			},
+			"HS": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"JL": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"AM": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"OB": {
+				"chapters": {
+					"1": {
+						"letter": "V",
+						"type": "simple"
+					}
+				}
+			},
+			"JH": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"MC": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"NM": {
+				"chapters": {
+					"1": {
+						"letter": "L",
+						"type": "simple"
+					}
+				}
+			},
+			"HK": {
+				"chapters": {
+					"1": {
+						"letter": "V",
+						"type": "simple"
+					}
+				}
+			},
+			"ZP": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"HG": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "simple"
+					}
+				}
+			},
+			"ZC": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "simple"
+					}
+				}
+			},
+			"ML": {
+				"chapters": {
+					"1": {
+						"letter": "L",
+						"type": "simple"
+					}
+				}
+			},
+			"TB": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"JT": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "simple"
+					}
+				}
+			},
+			"BR": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"LJ": {
+				"chapters": {
+					"1": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"PA": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"E1": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"WS": {
+				"chapters": {
+					"1": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"SR": {
+				"chapters": {
+					"1": {
+						"letter": "T",
+						"type": "simple"
+					}
+				}
+			},
+			"SN": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"BL": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"M1": {
+				"chapters": {
+					"1": {
+						"letter": "Ș",
+						"type": "simple"
+					}
+				}
+			},
+			"M2": {
+				"chapters": {
+					"1": {
+						"letter": "F",
+						"type": "simple"
+					}
+				}
+			},
+			"M3": {
+				"chapters": {
+					"1": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"M4": {
+				"chapters": {
+					"1": {
+						"letter": "P",
+						"type": "simple"
+					}
+				}
+			},
+			"MT": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "complex"
+					}
+				}
+			},
+			"MK": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "complex"
+					}
+				}
+			},
+			"LK": {
+				"chapters": {
+					"1": {
+						"letter": "D",
+						"type": "simple"
+					}
+				}
+			},
+			"JN": {
+				"chapters": {
+					"1": {
+						"letter": "D",
+						"type": "complex"
+					}
+				}
+			},
+			"AC": {
+				"chapters": {
+					"1": {
+						"letter": "C-Act",
+						"type": "complex"
+					}
+				}
+			},
+			"RM": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"C1": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"C2": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					},
+					"2": {
+						"letter": "Ș",
+						"type": "simple"
+					},
+					"3": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"GL": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"EP": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"PP": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"CL": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"H1": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"H2": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"T1": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"T2": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"TT": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"PM": {
+				"chapters": {
+					"1": {
+						"letter": "P-Paul",
+						"type": "complex"
+					}
+				}
+			},
+			"HB": {
+				"chapters": {
+					"1": {
+						"letter": "Î",
+						"type": "complex"
+					}
+				}
+			},
+			"JM": {
+				"chapters": {
+					"1": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"P1": {
+				"chapters": {
+					"1": {
+						"letter": "P",
+						"type": "simple"
+					}
+				}
+			},
+			"P2": {
+				"chapters": {
+					"1": {
+						"letter": "S",
+						"type": "simple"
+					}
+				}
+			},
+			"J1": {
+				"chapters": {
+					"1": {
+						"letter": "C-Act",
+						"type": "complex"
+					}
+				}
+			},
+			"J2": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"J3": {
+				"chapters": {
+					"1": {
+						"letter": "C",
+						"type": "simple"
+					}
+				}
+			},
+			"JD": {
+				"chapters": {
+					"1": {
+						"letter": "I",
+						"type": "simple"
+					}
+				}
+			},
+			"RV": {
+				"chapters": {
+					"1": {
+						"letter": "D",
+						"type": "complex"
+					}
+				}
+			}
+		}
+	}
+}
