@@ -1,9 +1,14 @@
 {
 	"textIds": [
 		"com_sfteofilact",
+		"com_sf_grigorie_palama",
+		"com_sf_ioan_gura_de_aur",
+		"grc_byz",
 		"grc_lxx",
 		"grc_sblgnt",
+		"ron_bal",
 		"ron_bor",
+		"ron_bsb",
 		"ron_roa"
 	],
 	"textInfoData": [
@@ -17,6 +22,39 @@
 			"langNameEnglish": "Roumanian",
 			"dir": "ltr",
 			"type": "commentary"
+		},
+		{
+			"id": "com_sf_grigorie_palama",
+			"name": "Tâlcuirile Sfântului Grigorie Palama",
+			"nameEnglish": "",
+			"abbr": "Palama",
+			"lang": "eng",
+			"langName": "Roumanian",
+			"langNameEnglish": "Roumanian",
+			"dir": "ltr",
+			"type": "commentary"
+		},
+		{
+			"id": "com_sf_ioan_gura_de_aur",
+			"name": "Tâlcuirile Sfântului Ioan Gură de Aur",
+			"nameEnglish": "",
+			"abbr": "Hrisostom",
+			"lang": "eng",
+			"langName": "Roumanian",
+			"langNameEnglish": "Roumanian",
+			"dir": "ltr",
+			"type": "commentary"
+		},
+		{
+			"id": "grc_byz",
+			"name": "Noul Testament - Text Bizantin (RP2018)",
+			"nameEnglish": "The New Testament in The Original Greek Byzantine Textform - RP2018",
+			"abbr": "BYZ",
+			"lang": "grc",
+			"langName": "ελληνικά",
+			"langNameEnglish": "Greek",
+			"dir": "ltr",
+			"type": "bible"
 		},
 		{
 			"id": "grc_lxx",
@@ -41,10 +79,32 @@
 			"type": "bible"
 		},
 		{
+			"id": "ron_bal",
+			"name": "Noul Testament sau Înpăcarea, sau Leagea Noao a lui Iisus Hristos Domnului nostru (1648)",
+			"nameEnglish": "",
+			"abbr": "BAL",
+			"lang": "ron",
+			"langName": "Română",
+			"langNameEnglish": "Roumanian",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
 			"id": "ron_bor",
 			"name": "Biblia Ortodoxă Română Sinodală (2006)",
 			"nameEnglish": "",
 			"abbr": "BOR",
+			"lang": "ron",
+			"langName": "Română",
+			"langNameEnglish": "Roumanian",
+			"dir": "ltr",
+			"type": "bible"
+		},
+		{
+			"id": "ron_bsb",
+			"name": "Biblia Șerban Cantacuzino (1688)",
+			"nameEnglish": "",
+			"abbr": "BSB",
 			"lang": "ron",
 			"langName": "Română",
 			"langNameEnglish": "Roumanian",

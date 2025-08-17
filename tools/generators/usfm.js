@@ -65,7 +65,8 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 			noteNumber = 1,
 			chapterVerse = '',
 			hasDecorativeInitial = false,
-			decorativeInitialLetter = '';
+			decorativeInitialLetter = '',
+			decorativeInitialType = 'complex';
 
 		for (var i = 0, il = lines.length; i < il; i++) {
 			var line = lines[i],
@@ -321,9 +322,9 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 					currentChapterCode = bibleFormatter.formatChapterCode(currentBookInfo.dbsCode, currentChapterNum);
 					
 					// Store decorative initial configuration for later use in verse processing
-					var hasDecorativeInitial = false;
-					var decorativeInitialLetter = '';
-					var decorativeInitialType = 'complex'; // default type
+					hasDecorativeInitial = false;
+					decorativeInitialLetter = '';
+					decorativeInitialType = 'complex'; // default type
 					if (info.decorativeInitials && info.decorativeInitials.enabled) {
 						var bookInitials = info.decorativeInitials.books[currentBookInfo.dbsCode];
 						if (bookInitials && bookInitials.chapters && bookInitials.chapters[currentChapterNum]) {
@@ -405,8 +406,8 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 							basePath = info.decorativeInitials.basePath;
 						}
 						
-						var imagePath = basePath + decorativeInitialLetter + '.png';
-						var textWithoutFirstLetter = formatted.text.replace(/^[A-Za-zÀ-ÿĂÂÎȘȚăâîșț]/, '');
+						var imagePath = basePath + decorativeInitialLetter + '.svg';
+						var textWithoutFirstLetter = formatted.text.replace(/^[A-Za-zÀ-ÿĂÂÎȘȚŞŢăâîșțşţ]/, '');
 						
 						currentChapterHtml += '<span class="v-num v-' + currentVerseNum + '">' + currentVerseNum + '&nbsp;</span>' +
 							'<div class="decorative-initial-container">' +
