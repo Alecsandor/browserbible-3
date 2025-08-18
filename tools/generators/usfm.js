@@ -407,7 +407,7 @@ function generate(inputBasePath, info, createIndex, startProgress, updateProgres
 						}
 						
 						var imagePath = basePath + decorativeInitialLetter + '.svg';
-						var textWithoutFirstLetter = formatted.text.replace(/^[A-Za-zÀ-ÿĂÂÎȘȚŞŢăâîșțşţ]/, '');
+						var textWithoutFirstLetter = formatted.text.replace(/^[A-Za-zÀ-ÿĂÂÎȘȚăâîșț]/, '');
 						
 						currentChapterHtml += '<span class="v-num v-' + currentVerseNum + '">' + currentVerseNum + '&nbsp;</span>' +
 							'<div class="decorative-initial-container">' +

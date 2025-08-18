@@ -186,6 +186,19 @@ div.c + div.q .v-1 {
 	display: inline;
 }
 
+/* Psalms: Simple fixed-width solution for decorative initials */
+.PS .decorative-initial-container {
+	float: left;
+	margin: 0 15px 20px 0;
+	width: 115px;
+}
+
+.PS .decorative-initial-container + span.v {
+	display: inline;
+	padding-left: 130px; /* Fixed left padding to clear the decorative initial */
+	line-height: 1.8;
+}
+
 .v {
 	padding: .3em 0;
 }
