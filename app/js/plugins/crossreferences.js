@@ -12,13 +12,18 @@ var CrossReferencePopupPlugin = function(app) {
 
 	function getFragmentidFromNode(node) {
 		var possibleTexts = [node.attr('data-id'), node.attr('title'), node.html()],
-			fragmentid = null;
+			fragmentid = null,
+			currentLanguage = i18n.lng() || 'eng';  // Detectează limba curentă
+			// Forțează română pentru testare
+			if (currentLanguage === 'ro') {
+				currentLanguage = 'ron';
+			}
 
 		for (var i=0, il=possibleTexts.length; i<il; i++) {
 			var text = possibleTexts[i];
 
 			if (typeof text != 'undefined' && text != null) {
-				var bref = new bible.Reference(text.split(';')[0].trim());
+				var bref = new bible.Reference(text.split(';')[0].trim(), currentLanguage);
 				if (typeof bref.toSection != 'undefined') {
 					fragmentid = bref.toSection();
 

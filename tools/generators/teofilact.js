@@ -175,7 +175,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				textRef = textRef.replace(x + '_', bookMap[x]);
 			}
 
-			r = new bibleReference(textRef);
+			r = new bibleReference(textRef, 'ron');
 
 			if (typeof r.toSection != 'undefined') {
 				s =  '<span class="bibleref" data-id="' + r.toSection() + '">' + r.chapterAndVerse() + '</span>';
@@ -266,7 +266,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				textRef = textRef.replace(x + '_', bookMap[x]);
 			}
 
-			r = new bibleReference(textRef);
+			r = new bibleReference(textRef, 'ron');
 
 			if (typeof r.toSection != 'undefined') {
 				s =  '<span class="bibleref" data-id="' + r.toSection() + '">' + (r.bookid == lastReference.bookid ? r.chapterAndVerse() : r.toString()) + '</span>';

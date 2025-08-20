@@ -53,14 +53,18 @@ bible.ReferenceFinder = (function() {
 				}
 				// full text
 				else {
-
-					ref = new bible.Reference(subPart);
+					var currentLanguage = i18n.lng() || 'eng';  // Detectează limba curentă
+					// Forțează română pentru testare
+					if (currentLanguage === 'ro') {
+						currentLanguage = 'ron';
+					}
+					ref = new bible.Reference(subPart, currentLanguage);
 				}
 
 				if (j > 0) {
 					formattedText += ', ';
 				}
-				formattedText += '<span class="v-link" data-fragmentid="' + ref.toSection() + '">' + subPart + '</a>';
+				formattedText += '<span class="v-link" data-fragmentid="' + ref.toSection() + '">' + ref.toString() + '</a>';
 
 				console.log(subPart, ref.toString());
 

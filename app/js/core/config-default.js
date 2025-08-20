@@ -54,7 +54,7 @@ sofia.config = {
 	pinnedLanguages: ['Romanian', 'Romanian'],
 
 	// Override the browser and user's choice for UI language
-	defaultLanguage: '',
+	defaultLanguage: 'ro',
 
 	// URL to custom CSS
 	customCssUrl: '',

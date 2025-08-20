@@ -188,7 +188,12 @@ bible.Reference = function () {
 		_verse1 = -1,
 		_chapter2 = -1,
 		_verse2 = -1,
-		_language = 'eng';
+		_language = (typeof i18n !== 'undefined' && i18n.lng()) ? i18n.lng() : 'eng';
+	
+	// Forțează română pentru testare
+	if (_language === 'ro') {
+		_language = 'ron';
+	}
 
 	if (arguments.length == 1 && typeof arguments[0] == 'string') { // a string that needs to be parsed
 		return bible.parseReference(arguments[0]);
