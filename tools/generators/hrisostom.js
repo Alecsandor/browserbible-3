@@ -85,7 +85,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 //  Luk: 'LK',
 //  Joh: 'JN',
 //   Act: 'AC',
-//   Rom: 'RM',
+//  Rom: 'RM',
 //   '1Co': 'C1',
 //   '2Co': 'C2',
 //   Gal: 'GL',
@@ -175,7 +175,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				textRef = textRef.replace(x + '_', bookMap[x]);
 			}
 
-			r = new bibleReference(textRef);
+			r = new bibleReference(textRef, 'ron');
 
 			if (typeof r.toSection != 'undefined') {
 				s =  '<span class="bibleref" data-id="' + r.toSection() + '">' + r.chapterAndVerse() + '</span>';
@@ -266,7 +266,7 @@ function generate(inputPath, info, createIndex, startProgress, updateProgress) {
 				textRef = textRef.replace(x + '_', bookMap[x]);
 			}
 
-			r = new bibleReference(textRef);
+			r = new bibleReference(textRef, 'ron');
 
 			if (typeof r.toSection != 'undefined') {
 				s =  '<span class="bibleref" data-id="' + r.toSection() + '">' + (r.bookid == lastReference.bookid ? r.chapterAndVerse() : r.toString()) + '</span>';
